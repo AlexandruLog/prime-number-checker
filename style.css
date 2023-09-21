@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(215, 191, 239);
+  font-family: sans-serif;
+}
+
+header {
+  height: 50px;
+  background-color: rebeccapurple;
+  color: #eeeeee;
+}
+
+header h1 {
+  width: max-content;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: slideTitle 1s ease-out;
+}
+
+@keyframes slideTitle {
+  from {
+    left: -50%;
+  }
+}
+
+.container {
+  width: 350px;
+  height: 220px;
+  background-color: rgb(148, 83, 213);
+  padding: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 1px 1px 15px rgb(93, 36, 151);
+}
+
+label {
+  color: #eee;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+#inputValue,
+#submitBtn {
+  font-size: 0.91rem;
+  padding: 4px;
+  border: 0;
+  outline: 0;
+  transition: background-color 0.3s;
+}
+
+#inputValue:focus,
+#submitBtn:hover {
+  background-color: rgb(241, 228, 255);
+}
+
+.verdict {
+  color: #eee;
+  background-color: rgb(86, 41, 131);
+  width: 240px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
